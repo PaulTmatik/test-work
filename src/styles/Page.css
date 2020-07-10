@@ -38,5 +38,52 @@
   .page__load_section {
     margin: 0.813rem 0.563rem 0.688rem 0.438rem;
     padding-top: 0.688rem;
+    padding-bottom: 1.25rem;
   }
+
+  .documents_loader {
+    margin-left: 0.938rem;
+  }
+}
+
+/* BUTTONS */
+.button {
+  align-items: center;
+  background-color: var(--color-button-background, #fff);
+  border: 1px solid var(--color-button-border, transparent);
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+  color: var(--color-button-foreground, inherit);
+  display: inline-flex;
+  line-height: 1.125rem;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 0.375rem;
+    min-width: 3.875rem;
+    padding: 0 0.375rem;
+  }
+
+  .button__icon + .button__text {
+    margin-left: 0.125rem;
+  }
+}
+
+.button--blue {
+  --color-button-background: #276ec3;
+  --color-button-foreground: #fff;
+}
+
+.button--hidden_element {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }

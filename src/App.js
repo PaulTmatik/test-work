@@ -1,5 +1,8 @@
 import React from "react";
 import Topbar from "./components/Topbar";
+import DocumentsLoader from "./components/DocumentsLoader";
+
+import { DocumentsStorage } from "./storage";
 
 import "./styles/Page.css";
 
@@ -14,6 +17,12 @@ function App() {
             Загрузите копию паспорта директора и учредителей компании: основной
             разворот и регистрация.
           </h2>
+          <DocumentsLoader
+            list={DocumentsStorage.map((item) => ({
+              key: item.id,
+              data: item,
+            }))}
+          />
         </section>
 
         <section className="page__load_section">
