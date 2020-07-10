@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import Topbar from "./components/Topbar";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <Topbar companyName="ООО «Ромашка обыкновенная»" tin="1234567890" />
+    </>
   );
 }
 

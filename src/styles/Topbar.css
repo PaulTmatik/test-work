@@ -1,0 +1,60 @@
+.topbar {
+  align-items: center;
+  background-color: #fff;
+  color: #000c25;
+  display: flex;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    height: 1.813rem;
+  }
+}
+
+.topbar__middle {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .topbar__middle {
+    margin-left: 0.625rem;
+  }
+}
+
+.topbar__button {
+  align-items: center;
+  background-color: #fff;
+  border: 0;
+  color: inherit;
+  display: flex;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.125rem;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .topbar__button {
+    height: 1.813rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.topbar__button_text {
+  font-size: 0.5rem;
+}
+
+.topbar__button_icon + .topbar__button_text {
+  margin-left: 0.313rem;
+}
+
+.topbar__summary + .topbar__button {
+  margin-left: 0.063rem;
+}
+
+.topbar__middle ~ .topbar__button {
+  border-left: 1px solid #F1F1F1;
+}
