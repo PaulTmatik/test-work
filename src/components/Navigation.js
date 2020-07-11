@@ -8,10 +8,10 @@ class Navigation extends Component {
       <nav className="navigation">
         <ul className="navigation__links">
           <li className="navigation__item navigation--complite">
-            <a className="navigation__link" href="#">Идентификация</a>
+            <a className="navigation__link" href="/identity">Идентификация</a>
           </li>
           <li className="navigation__item navigation--current">
-            <a className="navigation__link" href="#">Документация</a>
+            <a className="navigation__link" href="/docs">Документация</a>
           </li>
           <li className="navigation__item navigation--disabled">
             <span className="navigation__link">Решение</span>

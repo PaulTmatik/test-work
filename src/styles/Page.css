@@ -31,6 +31,14 @@ a:hover {
   }
 }
 
+@media (min-width: 1280px) {
+  .page__main {
+    margin-top: 1.375rem;
+    margin-bottom: 1.375rem;
+    padding-top: 3.625rem;
+  }
+}
+
 .page__h1 {
   color: #000c25;
   line-height: 2rem;
@@ -53,6 +61,12 @@ a:hover {
 @media (min-width: 600px) {
   .page__h1 {
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .page__h1 {
+    font-size: 1.875rem;
   }
 }
 
@@ -132,7 +146,7 @@ a:hover {
   }
 }
 
-@media (min-width: 900px) and (max-width: 970px) {
+@media (min-width: 600px) and (max-width: 640px), (min-width: 900px) and (max-width: 970px) {
   .page__load_section {
     margin-left: 1.219rem;
     margin-right: 1.219rem;
@@ -141,6 +155,28 @@ a:hover {
   .documents_loader {
     margin-left: 1.219rem;
     margin-right: 1.219rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__load_section {
+    margin-top: 4.313rem;
+  }
+
+
+  .documents_loader {
+    margin-top: 3.25rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page__load_section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page__load_section:first-child {
+    margin-right: 4.813rem;
   }
 }
 
@@ -207,6 +243,16 @@ a:hover {
 @media (min-width: 900px) and (max-width: 1279px), (min-width: 1600px) {
   .page__footer {
     padding-left: 20rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__footer {
+    justify-content: flex-start;
+  }
+
+  .page__company_info {
+    margin-right: 2.313rem;
   }
 }
 
