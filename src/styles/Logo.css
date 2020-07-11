@@ -1,0 +1,13 @@
+.site_logo {
+  align-items: center;
+  display: flex;
+}
+
+.site_logo__illustration {
+  margin-right: 0.75rem;
+  width: 2.188rem;
+}
+
+.site_logo__text {
+  width: 4.563rem;
+}

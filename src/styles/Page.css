@@ -25,6 +25,12 @@ a:hover {
   }
 }
 
+@media (min-width: 900px) {
+  .page__main {
+    margin-left: 20rem;
+  }
+}
+
 .page__h1 {
   color: #000c25;
   line-height: 2rem;
@@ -181,6 +187,11 @@ a:hover {
   }
 }
 
+@media (min-width: 900px) {
+  .page__footer {
+    padding-left: 20rem;
+  }
+}
 .page__topbar {
   left: 0;
   position: fixed;

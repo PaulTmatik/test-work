@@ -10,7 +10,11 @@ class Topbar extends Component {
     const { companyName, tin, className } = this.props;
     return (
       <div className={["topbar", className].join(" ")}>
-        <button className="topbar__button" title="Меню" aria-label="Меню">
+        <button
+          className="topbar__button topbar__menu_button"
+          title="Меню"
+          aria-label="Меню"
+        >
           <img
             src={burgerIcom}
             className="topbar__button_icon"

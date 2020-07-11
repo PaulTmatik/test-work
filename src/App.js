@@ -3,6 +3,7 @@ import Topbar from "./components/Topbar";
 import DocumentsLoader from "./components/DocumentsLoader";
 import ExtractLoader from "./components/ExtractLoader";
 import Calendar from "./components/Calendar";
+import SidePane from "./components/SidePane";
 
 import { DocumentsStorage } from "./storage";
 import { ExtractStorage } from "./storage";
@@ -17,6 +18,7 @@ function App() {
         companyName="ООО «Ромашка обыкновенная»"
         tin="1234567890"
       />
+      <SidePane />
       <main className="page__main">
         <h1 className="page__h1">Загрузите документацию</h1>
         <section className="page__load_section">

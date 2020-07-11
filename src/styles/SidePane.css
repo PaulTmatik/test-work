@@ -1,0 +1,70 @@
+.side_pane {
+  background-color: white;
+  box-shadow: 0px 0.25rem 1.875rem rgba(192, 192, 192, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 200ms ease-out;
+  width: 18.75rem;
+}
+
+.side_pane--open {
+  transform: translateX(0);
+}
+
+@media (min-width: 900px) {
+  .side_pane {
+    transform: translateX(0);
+  }
+}
+
+.side_pane__logo {
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  height: 4.688rem;
+  justify-content: space-between;
+  padding-left: 1.813rem;
+}
+
+.side_pane__navigation {
+  border-bottom: 1px solid #f1f1f1;
+  flex-grow: 1;
+}
+
+.side_pane__footer {
+  padding: 1.75rem 1.5rem;
+}
+
+.side_pane__contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  margin-top: 3.688rem;
+}
+
+.side_pane__phone {
+  color: #000c25;
+  font-weight: 600;
+  margin-bottom: 1.125rem;
+}
+
+.side_pane__email {
+  color: #000c25;
+  font-weight: 500;
+}
+
+.side_pane__phone,
+.side_pane__email {
+  align-items: center;
+  display: flex;
+}
+
+.side_pane__icon {
+  display: inline-block;
+  margin-right: 0.813rem;
+}
