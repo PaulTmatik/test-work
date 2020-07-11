@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { cutString } from "../helpers";
 
 import blackClipIcon from "../images/black-clip-icon.svg";
-import whiteClipIcon from "../images/white-clip-icon.svg";
 
 import "../styles/DocumentsLoader.css";
+import PickupButton from "./PickupButton";
 
 class DocumentsLoader extends Component {
   render() {
@@ -43,18 +43,7 @@ class DocumentsLoader extends Component {
 
   switchBetweenButtonAndLink(buttonName, copyData) {
     if (Boolean(copyData) === false)
-      return (
-        <label className="button button--blue">
-          <img
-            src={whiteClipIcon}
-            className="button__icon"
-            alt="Скрепка"
-            aria-hidden="true"
-          />
-          <span className="button__text">{buttonName}</span>
-          <input type="file" className="button--hidden_element" />
-        </label>
-      );
+      return <PickupButton>{buttonName}</PickupButton>;
     const { filename, link } = copyData;
     return (
       <div className="documents_loader__pickup">
