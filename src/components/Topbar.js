@@ -28,7 +28,7 @@ class Topbar extends Component {
             <div className="topbar__tin">ИНН {tin}</div>
           </div>
           <button
-            className="topbar__button"
+            className="topbar__button topbar__config_button"
             aria-label="Настройки"
             title="Настройки"
           >

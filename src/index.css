@@ -34,3 +34,9 @@ code {
     padding-top: 3.5rem;
   }
 }
+
+@media (min-width: 1280px) {
+  body {
+    padding-top: 4.688rem;
+  }
+}

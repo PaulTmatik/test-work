@@ -25,7 +25,7 @@ a:hover {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1279px), (min-width: 1600px) {
   .page__main {
     margin-left: 20rem;
   }
@@ -126,11 +126,28 @@ a:hover {
   }
 }
 
+@media (min-width: 900px) {
+  .page__load_section {
+    margin-bottom: 2.438rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 970px) {
+  .page__load_section {
+    margin-left: 1.219rem;
+    margin-right: 1.219rem;
+  }
+
+  .documents_loader {
+    margin-left: 1.219rem;
+    margin-right: 1.219rem;
+  }
+}
+
 .page__calendar_section {
   align-items: center;
   display: flex;
   flex-direction: column;
-  
 }
 
 @media (max-width: 600px) {
@@ -187,11 +204,13 @@ a:hover {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1279px), (min-width: 1600px) {
   .page__footer {
     padding-left: 20rem;
   }
 }
+
+
 .page__topbar {
   left: 0;
   position: fixed;
@@ -267,4 +286,11 @@ a:hover {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+@media (min-width: 1280px) {
+  .page__toggle_position {
+    display: flex;
+    justify-content: center;
+  }
 }

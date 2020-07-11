@@ -21,30 +21,34 @@ function App() {
       <SidePane />
       <main className="page__main">
         <h1 className="page__h1">Загрузите документацию</h1>
-        <section className="page__load_section">
-          <h2 className="page__h2 page--wide_margin">
-            Загрузите копию паспорта директора и учредителей компании: основной
-            разворот и регистрация.
-          </h2>
-          <DocumentsLoader
-            list={DocumentsStorage.map((item) => ({
-              key: item.id,
-              data: item,
-            }))}
-          />
-        </section>
+        <div className="page__toggle_position">
+          <section className="page__load_section">
+            <h2 className="page__h2 page--wide_margin">
+              Загрузите копию паспорта директора и учредителей компании:
+              основной разворот и регистрация.
+            </h2>
+            <DocumentsLoader
+              list={DocumentsStorage.map((item) => ({
+                key: item.id,
+                data: item,
+              }))}
+            />
+          </section>
 
-        <section className="page__load_section">
-          <h2 className="page__h2">
-            Загрузите банковские выписки за последние 24 месяца в формате .txt
-            (1C) по следующим счетам:
-          </h2>
-          <ExtractLoader
-            period={{ start: "06.06.2017", end: "06.06.2020" }}
-            list={ExtractStorage.map((item) => ({ key: item.id, data: item }))}
-          />
-        </section>
-
+          <section className="page__load_section">
+            <h2 className="page__h2">
+              Загрузите банковские выписки за последние 24 месяца в формате .txt
+              (1C) по следующим счетам:
+            </h2>
+            <ExtractLoader
+              period={{ start: "06.06.2017", end: "06.06.2020" }}
+              list={ExtractStorage.map((item) => ({
+                key: item.id,
+                data: item,
+              }))}
+            />
+          </section>
+        </div>
         <section className="page__calendar_section">
           <Calendar />
           <button className="button button--blue">Отправить на оценку</button>

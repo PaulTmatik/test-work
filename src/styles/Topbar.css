@@ -24,6 +24,30 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .topbar {
+    height: 4.688rem;
+  }
+
+  .topbar__summary {
+    align-items: center;
+    display: flex;
+  }
+
+  .topbar__company_name {
+    font-size: 1.25rem;
+    margin-right: 0.5em;
+  }
+
+  .topbar__tin {
+    font-size: 1.125rem;
+  }
+
+  .topbar__button_icon {
+    width: 1rem;
+  }
+}
+
 .topbar__middle {
   align-items: center;
   display: flex;
@@ -36,7 +60,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1279px), (min-width: 1600px) {
   .topbar__middle {
     margin-left: 20rem;
   }
@@ -88,6 +112,16 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .topbar__button {
+    height: 4.688rem;
+  }
+  
+  .topbar__button:not(.topbar__config_button) {
+    padding: 0 1.875rem;
+  }
+}
+
 .topbar__button_text {
   font-size: 0.5rem;
 }
@@ -95,6 +129,12 @@
 @media (min-width: 600px) {
   .topbar__button_text {
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .topbar__button_text {
+    font-size: 1.125rem;
   }
 }
 

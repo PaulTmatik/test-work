@@ -16,7 +16,7 @@
   transform: translateX(0);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1279px), (min-width: 1600px) {
   .side_pane {
     transform: translateX(0);
   }
