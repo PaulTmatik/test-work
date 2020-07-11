@@ -44,6 +44,22 @@ function App() {
           <button className="button button--blue">Отправить на оценку</button>
         </section>
       </main>
+      <footer className="page__footer">
+        <div className="page__company_info">
+          <div>г. Москва, Пресненская наб. 6, строение 2 </div>
+          <div>
+            ИНН <strong>7724451748</strong> ОГРН{" "}
+            <strong>1187746779868</strong>
+          </div>
+        </div>
+        <div className="page__company_feedback">
+          <div>2019 ООО "Джетленд"</div>
+          <div>
+            <a href="mailto:support@jetlend.ru">support@jetlend.ru</a>{" "}
+            <a href="tel:+78002229332" className="page__company_phone">8 800 222 9332</a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
