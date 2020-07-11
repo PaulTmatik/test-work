@@ -41,6 +41,7 @@ function App() {
 
         <section className="page__calendar_section">
           <Calendar />
+          <button className="button button--blue">Отправить на оценку</button>
         </section>
       </main>
     </>
