@@ -44,6 +44,16 @@
   .documents_loader {
     margin-left: 0.938rem;
   }
+
+  .page__calendar_section {
+    margin-top: 1.625rem;
+  }
+}
+
+.page__calendar_section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* BUTTONS */

@@ -43,3 +43,4 @@ export const ExtractStorage = [
     status: 0,
   },
 ];
+
