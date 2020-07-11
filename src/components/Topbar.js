@@ -6,6 +6,12 @@ import exitIcon from "../images/exit-icon.svg";
 import burgerIcom from "../images/burger-menu.svg";
 
 class Topbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onToggleMenuHandler = this.onToggleMenuHandler.bind(this);
+  }
+
   render() {
     const { companyName, tin, className } = this.props;
     return (
@@ -14,6 +20,7 @@ class Topbar extends Component {
           className="topbar__button topbar__menu_button"
           title="Меню"
           aria-label="Меню"
+          onClick={(e) => this.onToggleMenuHandler(e)}
         >
           <img
             src={burgerIcom}
@@ -66,6 +73,11 @@ class Topbar extends Component {
         </button>
       </div>
     );
+  }
+
+  onToggleMenuHandler(e) {
+    const { onToggleMenu } = this.props;
+    if (onToggleMenu) onToggleMenu(e);
   }
 }
 

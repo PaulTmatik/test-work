@@ -10,11 +10,25 @@ import "../styles/SidePane.css";
 import Navigation from "./Navigation";
 
 class SidePane extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onCloseHandler = this.onCloseHandler.bind(this);
+  }
   render() {
+    const { isOpen } = this.props;
     return (
-      <aside className="side_pane">
+      <aside
+        className={["side_pane", isOpen ? "side_pane--open" : null].join(" ")}
+      >
         <div className="side_pane__logo">
           <Logo />
+          <button
+            className="side_pane__close_button"
+            onClick={(e) => this.onCloseHandler(e)}
+          >
+            ←
+          </button>
         </div>
         <div className="side_pane__navigation">
           <Navigation />
@@ -52,6 +66,11 @@ class SidePane extends Component {
         </footer>
       </aside>
     );
+  }
+
+  onCloseHandler(e) {
+    const { onClose } = this.props;
+    if (onClose) onClose(e);
   }
 }
 

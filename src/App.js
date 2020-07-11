@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Topbar from "./components/Topbar";
 import DocumentsLoader from "./components/DocumentsLoader";
 import ExtractLoader from "./components/ExtractLoader";
@@ -11,14 +11,16 @@ import { ExtractStorage } from "./storage";
 import "./styles/Page.css";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <Topbar
         className="page__topbar"
         companyName="ООО «Ромашка обыкновенная»"
         tin="1234567890"
+        onToggleMenu={() => setIsOpen(!isOpen)}
       />
-      <SidePane />
+      <SidePane isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} />
       <main className="page__main">
         <h1 className="page__h1">Загрузите документацию</h1>
         <div className="page__toggle_position">
