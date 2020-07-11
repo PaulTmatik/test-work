@@ -20,7 +20,7 @@ function App() {
       <main className="page__main">
         <h1 className="page__h1">Загрузите документацию</h1>
         <section className="page__load_section">
-          <h2 className="page__h2">
+          <h2 className="page__h2 page--wide_margin">
             Загрузите копию паспорта директора и учредителей компании: основной
             разворот и регистрация.
           </h2>

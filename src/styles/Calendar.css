@@ -10,6 +10,20 @@
   }
 }
 
+@media (min-width: 400px) {
+  .calendar {
+    width: 17rem;
+    margin-left: -1.825rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .calendar {
+    width: 32rem;
+    margin-left: -1.825rem;
+  }
+}
+
 .calendar__months {
   display: flex;
   flex-grow: 1;
@@ -26,8 +40,26 @@
   }
 }
 
+@media (min-width: 400px) and (max-width: 600px) {
+  .calendar__months {
+    flex-basis: 13.625rem;
+    font-size: 0.5rem;
+    margin-left: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .calendar__months {
+    margin-inline-start: 0;
+    margin-bottom: 2.125rem;
+    width: 30rem;
+  }
+}
+
+
 .calendar__year {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.125em;
 }
 
@@ -37,9 +69,29 @@
   }
 }
 
+@media (min-width: 400px) and (max-width: 600px) {
+  .calendar__year {
+    font-size: 0.625rem;
+  }
+}
+
 @media (max-width: 600px) {
   .calendar__month_item {
     width: 1.938rem;
+    margin-bottom: 0.375rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .calendar__month_item {
+    width: 2.238rem;
+    margin-bottom: 0.375rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .calendar__month_item {
+    width: 4.75rem;
     margin-bottom: 0.375rem;
   }
 }
@@ -67,5 +119,13 @@
     border-radius: 0.25rem;
     height: 0.5rem;
     margin-top: 0.063rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .calendar__link:after {
+    border-radius: 0.25rem;
+    height: 0.5rem;
+    margin-top: 0.175rem;
   }
 }
