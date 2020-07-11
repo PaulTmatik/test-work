@@ -1,0 +1,27 @@
+.navigation__links {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.navigation--complite .navigation__link {
+  color: #001646;
+}
+
+.navigation--disabled .navigation__link {
+  color: #adb1b6;
+}
+
+.navigation__link {
+  display: block;
+  padding: 1rem 1.875rem;
+}
+
+.navigation__item {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.navigation--current {
+  background-color: rgba(39, 110, 195, 0.1);
+}

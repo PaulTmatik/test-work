@@ -7,6 +7,7 @@ import phoneIcon from "../images/phone-icon.svg";
 import emailIcon from "../images/email-icon.svg";
 
 import "../styles/SidePane.css";
+import Navigation from "./Navigation";
 
 class SidePane extends Component {
   render() {
@@ -15,7 +16,9 @@ class SidePane extends Component {
         <div className="side_pane__logo">
           <Logo />
         </div>
-        <div className="side_pane__navigation"></div>
+        <div className="side_pane__navigation">
+          <Navigation />
+        </div>
         <footer className="side_pane__footer">
           <ManagerCard
             imageSrc="https://randomuser.me/api/portraits/men/1.jpg"
