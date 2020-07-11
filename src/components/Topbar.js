@@ -7,9 +7,9 @@ import burgerIcom from "../images/burger-menu.svg";
 
 class Topbar extends Component {
   render() {
-    const { companyName, tin } = this.props;
+    const { companyName, tin, className } = this.props;
     return (
-      <div className="topbar">
+      <div className={["topbar", className].join(" ")}>
         <button className="topbar__button" title="Меню" aria-label="Меню">
           <img
             src={burgerIcom}
